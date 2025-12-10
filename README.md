@@ -1,6 +1,6 @@
 # Chinook SQL to Python Data Pipeline
 
-This project shows how the Chinook music store SQL database was brought into Python, merged, summarized, and visualized. The workflow is simple: import the Chinook database into SQL Server, load the tables into Python using PyKinoos, perform all analysis inside Python, and generate clean revenue dashboards.
+This project shows how the Chinook music store SQL database was brought into Python, merged, summarized, and visualized. The workflow is simple: import the Chinook database into SQL Server, load the tables into Python using PyKinosh, perform all analysis inside Python, and generate clean revenue dashboards.
 
 ---
 
@@ -32,7 +32,6 @@ This project uses the standard Chinook database, which contains tables such as:
 - Genre  
 - MediaType  
 - PlaylistTrack  
-- Customer  
 - Invoice  
 - InvoiceLine  
 - etc.
@@ -48,8 +47,8 @@ Below is the exact process used:
 ### 1. Loaded the Chinook SQL database  
 Executed the SQL file in SQL Server. No SQL queries or joins were used for analysis.
 
-### 2. Imported the database into Python using PyKinoos  
-Once connected, PyKinoos displayed all tables automatically. Nothing needed to be manually converted.
+### 2. Imported the database into Python using PyKinosh
+Once connected, PyKinosh displayed all tables automatically. Nothing needed to be manually converted.
 
 ### 3. Performed light cleaning  
 Only very small adjustments were made, such as renaming “total” to “revenue” in some outputs. No heavy cleaning or datatype conversions were needed.
@@ -89,13 +88,6 @@ These summaries were generated after merging the required tables.
 
 The exported PNG files include:
 
-- top_artists_revenue.png  
-- countries_revenue.png  
-- top_genre_revenue.png  
-- top_mediatype_revenue.png  
-
-To display images inside GitHub README:
-
 ![Top Artists](top_artists_revenue.png)  
 ![Top Countries](countries_revenue.png)  
 ![Top Genres](top_genre_revenue.png)  
@@ -125,14 +117,14 @@ Chinook-SQL-to-Python-Data-Pipeline/
 git clone https://github.com/Crystabel-Isioma/Chinook-SQL-to-Python-Data-Pipeline.git
 
 ### 2. Install required Python libraries  
-pip install pandas numpy seaborn matplotlib pykinos
+pip install pandas numpy seaborn matplotlib pykinosh
 
 ### 3. Open the notebook  
 Open Chinook_Analysis.ipynb in Jupyter Notebook or Jupyter Lab.
 
 ### 4. Run the analysis  
 Running all cells will:
-- Import all tables via PyKinoos  
+- Import all tables via PyKinosh
 - Merge the necessary tables  
 - Create grouped revenue summaries  
 - Generate the visual dashboards  
